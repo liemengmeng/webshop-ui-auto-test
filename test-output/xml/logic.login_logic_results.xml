@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="7.894">
+           time="6.651">
   <properties />
   
   
-            <testcase name="show" time="7.894" classname="logic.login_logic" />
+            <testcase name="show" time="6.651" classname="logic.login_logic" />
       
 </testsuite>
