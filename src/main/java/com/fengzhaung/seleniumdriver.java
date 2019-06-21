@@ -13,19 +13,16 @@ public class seleniumdriver {
     public static WebDriver driver;
     //开启浏览器方法
     public static WebDriver open(String browser) {
-
-        //获取当前driver相对路径根据运行进行改变。
-        String path=System.getProperty("user.dri");
         if (browser.equals("chrome")){
             driver=new ChromeDriver();
 //设置路径
-            System.setProperty("webdriver.chrome.driver",path+"/drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver","C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
         }else if(browser.equals("ie")){
             driver=new InternetExplorerDriver();
 //没下载，下载后可以加上地址。
         }else if (browser.equals("firefox")){
-            driver=new FirefoxDriver();
-            System.setProperty("webdriver.firefox.driver",path+"/drivers/geckodriver.exe");
+      //      driver=new FirefoxDriver();
+      //      System.setProperty("webdriver.firefox.driver",path+"/drivers/geckodriver.exe");
 
         }else{
 System.out.println("你输入的浏览器有误");
