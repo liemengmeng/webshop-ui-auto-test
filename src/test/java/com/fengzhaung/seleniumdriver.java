@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
 /*
 二次封装selenium打开浏览器关闭浏览器方法
  */
@@ -12,6 +15,7 @@ public class seleniumdriver {
     final static LoggerControler log=LoggerControler.getLogger(seleniumdriver.class);
     public static WebDriver driver;
     //开启浏览器方法
+    @AfterSuite
     public static WebDriver open(String browser) {
 
         //获取当前driver相对路径根据运行进行改变。
@@ -33,10 +37,12 @@ System.out.println("你输入的浏览器有误");
         return  driver;
     }
     //关闭浏览器方法
+    @BeforeSuite
     public static void closeAll(){
         driver.quit();
         log.info("关闭浏览器");
     }
+    @BeforeSuite
     public static void close(){
         driver.close();
         log.info("关闭所有相关内容，释放资源");

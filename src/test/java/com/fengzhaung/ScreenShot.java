@@ -7,6 +7,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.Augmenter;
+import org.testng.annotations.Test;
 import tools.MyFile;
 
 import java.io.File;
@@ -24,6 +25,7 @@ public class ScreenShot extends seleniumdriver {
     /**
      * 错误截图，通过日期命名的截图
      **/
+
     public static void screenShots() {
         File file = ((TakesScreenshot)seleniumdriver.driver).getScreenshotAs(OutputType.FILE);
         MyFile myFile=new MyFile();
