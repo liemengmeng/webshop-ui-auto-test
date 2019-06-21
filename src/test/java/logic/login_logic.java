@@ -1,6 +1,7 @@
 package logic;
 import com.fengzhaung.actions;
 
+import com.fengzhaung.seleniumdriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -9,9 +10,9 @@ import pages.login;
 
 
 
-public class login_logic  {
+public class login_logic extends seleniumdriver  {
     //账号密码登录
-/*
+
     public static void userlogin(String username,String password){
         seleniumdriver.open("chrome");
         seleniumdriver.driver.get("http://192.168.100.17/#/Login");
@@ -47,13 +48,13 @@ public class login_logic  {
         actions.clik(login.out2);
     }
   @Test
-    public void show(){
+    public void show() {
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
-      WebDriver driver=new ChromeDriver();
-        driver.get("https://www.baidu.com/");
+      System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
+      WebDriver driver = new ChromeDriver();
+      driver.get("https://www.baidu.com/");
 
-        */
+  }
   }
 
 
