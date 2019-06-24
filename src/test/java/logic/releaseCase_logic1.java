@@ -2,6 +2,7 @@ package logic;
 
 
 import com.fengzhaung.seleniumdriver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import pages.releaseCasse;
@@ -11,6 +12,7 @@ import java.awt.event.KeyEvent;
 import java.util.Set;
 
 public class releaseCase_logic1 extends seleniumdriver {
+   static WebDriver driver=seleniumdriver.driver;
     public  static void login() {
         //打开网页
         seleniumdriver.open("chrome");

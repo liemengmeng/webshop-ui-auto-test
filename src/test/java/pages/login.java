@@ -23,6 +23,4 @@ public class login {
     public static By out1=By.xpath("//*[@id=\"app\"]/div[1]/div[2]/img");
     public static  By out2=By.linkText("退出");
 
-
-
 }

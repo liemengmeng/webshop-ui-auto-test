@@ -1,10 +1,11 @@
 package logic;
 import com.fengzhaung.seleniumdriver;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.forgetPwd;
 
 public class forget_logic extends seleniumdriver {
-
+    static WebDriver driver= seleniumdriver.driver;
 public  static void skipForget(){
         //点击忘记密码页面跳转
    driver.findElement(forgetPwd.pwdBut).click();

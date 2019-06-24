@@ -117,3 +117,4 @@
 2019-06-20 16:33:18,436 INFO main [testng.TestResultListener]onTestStart(line:50)feature Start
 2019-06-20 16:33:18,595 INFO main [testng.TestResultListener]onFinish(line:69)skipTest = feature
 2019-06-20 16:33:18,595 INFO main [testng.TestResultListener]onFinish(line:69)skipTest = feature
+2019-06-24 13:43:39,673 ERROR main [class com.fengzhaung.seleniumdriver]error(line:48)浏览器输入有误
