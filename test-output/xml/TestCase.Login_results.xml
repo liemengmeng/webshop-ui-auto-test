@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="D:/KDubaSoftDownloads/JavaWork/webshop-ui-auto-test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="142.513">
+  <properties />
+  
+  
+            <testcase name="login1" time="5.267" classname="TestCase.Login" />
+                <testcase name="login3" time="69.233" classname="TestCase.Login" />
+                <testcase name="login2" time="68.013" classname="TestCase.Login" />
+      
+</testsuite>

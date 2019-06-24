@@ -12,16 +12,22 @@ public class login_logic extends seleniumdriver {
     //账号密码登录
 
     public static void userlogin(String username,String password){
-  driver.findElement(login.loginName).sendKeys( username);
-  driver.findElement(login.passWord).sendKeys(password);
-  driver.findElement(login.longinbut).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(login.loginName).sendKeys(username);
+        driver.findElement(login.passWord).sendKeys(password);
+        com.fengzhaung.actions.clik(login.longinbut);
 
     }
     //验证码登录
 
     public static void tellogin(String tel,String yanzheng){
+
     //点击切换手机号的登录按钮
-   driver.findElement(login.tellogin).click();
+  com.fengzhaung.actions.clik(login.tellogin);
    driver.findElement(login.tel).sendKeys(tel);
         try {
             Thread.sleep(62000);
@@ -39,8 +45,8 @@ public class login_logic extends seleniumdriver {
 //登录成功退出登录
 
     public static void out(){
-        actions.clik(login.out1);
-        actions.clik(login.out2);
+        com.fengzhaung.actions.clik(login.out1);
+        com.fengzhaung.actions.clik(login.out2);
     }
 
   }
