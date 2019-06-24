@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-
-   <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-</listeners>
-
     <test verbose="2" preserve-order="true" name="D:/KDubaSoftDownloads/JavaWork/webshop-ui-auto-test">
-    <classes>
-        <class name="logic.login_logic">
-            <methods><include name="show"/></methods>
-        </class>
-    </classes>
+        <classes>
+            <class name="TestCase.Login"/>
+            <class name="TestCase.openURL">
+                <methods><include name="login1"/>
+                </methods>
+            </class>
+        </classes>
     </test>
 </suite>

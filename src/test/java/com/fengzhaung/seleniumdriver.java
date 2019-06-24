@@ -15,11 +15,19 @@ public class seleniumdriver {
 
 driver=new ChromeDriver();
 System.setProperty("webdriver.chrome.driver","C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
-
+driver.manage().window().maximize();
 
         }else{
 log.error("浏览器输入有误");
         }
     }
+    //关闭页面
+    public static void close(){
+        driver.close();
+    }
 
+    //关闭所有相关资源
+    public static void closeAll(){
+        driver.close();
+    }
 }

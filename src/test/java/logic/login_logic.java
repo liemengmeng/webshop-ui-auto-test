@@ -3,7 +3,6 @@ package logic;
 
 import com.fengzhaung.actions;
 import com.fengzhaung.seleniumdriver;
-import org.testng.annotations.Test;
 import pages.login;
 
 
@@ -13,9 +12,6 @@ public class login_logic extends seleniumdriver {
     //账号密码登录
 
     public static void userlogin(String username,String password){
-        seleniumdriver.open("chrome");
-        seleniumdriver.driver.get("http://192.168.100.17/#/Login");
-        driver.manage().window().maximize();
   driver.findElement(login.loginName).sendKeys( username);
   driver.findElement(login.passWord).sendKeys(password);
   driver.findElement(login.longinbut).click();
