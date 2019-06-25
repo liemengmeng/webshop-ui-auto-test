@@ -3,6 +3,7 @@ package logic;
 
 import com.fengzhaung.actions;
 import com.fengzhaung.seleniumdriver;
+import org.openqa.selenium.WebDriver;
 import pages.login;
 
 
@@ -10,7 +11,7 @@ import pages.login;
 
 public class login_logic extends seleniumdriver {
     //账号密码登录
-
+ static WebDriver driver=seleniumdriver.driver;
     public static void userlogin(String username,String password){
         try {
             Thread.sleep(3000);

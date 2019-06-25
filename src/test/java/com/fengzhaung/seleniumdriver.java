@@ -12,9 +12,8 @@ public class seleniumdriver {
 
     public  static void open(String name){
         if (name.equals("chrome")){
-
-driver=new ChromeDriver();
 System.setProperty("webdriver.chrome.driver","C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
+            driver=new ChromeDriver();
 driver.manage().window().maximize();
 
         }else{
