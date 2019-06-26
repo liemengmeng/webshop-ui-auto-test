@@ -1,18 +1,22 @@
 package logic;
+import MyAssert.MyAssert;
 import com.fengzhaung.seleniumdriver;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.forgetPwd;
+import pages.login;
 
 public class forget_logic extends seleniumdriver {
     static WebDriver driver= seleniumdriver.driver;
 public  static void skipForget(){
+    //点击切换到账号密码登录
+    driver.findElement(login.userlogin).click();
         //点击忘记密码页面跳转
    driver.findElement(forgetPwd.pwdBut).click();
 
     //校验url是否正确
     String url=driver.getCurrentUrl();
-    Assert.assertEquals(url,"http://192.168.100.17/#/reset");
+MyAssert.assertEquals(url,"http://192.168.100.17/#/reset");
 }
 //录入账号验证码
 public static void luru(String user,String yanzheng){
@@ -48,7 +52,7 @@ driver.findElement(forgetPwd.newpwd1).sendKeys(pwd1);
     }
     //重置成功
     public static void succeed(){
-       driver.findElement(forgetPwd.atonce).click();
+    com.fengzhaung.actions.clik(forgetPwd.atonce);
         //获取当前页面url查看是否跳转到登录页
     String url= driver.getCurrentUrl();
     Assert.assertEquals(url,"http://192.168.100.17/#/Login");

@@ -46,6 +46,11 @@ public class login_logic extends seleniumdriver {
 //登录成功退出登录
 
     public static void out(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         com.fengzhaung.actions.clik(login.out1);
         com.fengzhaung.actions.clik(login.out2);
     }

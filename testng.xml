@@ -8,10 +8,22 @@
 
     <test verbose="2" preserve-order="true" name="D:/KDubaSoftDownloads/JavaWork/webshop-ui-auto-test">
         <classes>
-            <class name="TestCase.Login"/>
-            <class name="TestCase.openURL"/>
+            <class name="TestCase.openURL">
+                <methods>
+                    <include name="open"/>
+                    <include name="closeAll"/>
+                </methods>
+            </class>
+            <class name="TestCase.Login">
+                <methods>
+                    <include name="login1"/>
+                    <include name="login2"/>
+                    <include name="login3"/>
+                </methods>
+            </class>
             <class name="TestCase.forgetPWD">
-                <methods><include name="login1"/>
+                <methods>
+                    <include name="skipForget"/>
                 </methods>
             </class>
         </classes>
