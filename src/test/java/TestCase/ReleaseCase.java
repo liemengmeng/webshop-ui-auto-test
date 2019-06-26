@@ -2,15 +2,11 @@ package TestCase;
 
 import com.fengzhaung.seleniumdriver;
 import logic.releaseCase_logic1;
-import org.testng.annotations.BeforeSuite;
+
 import org.testng.annotations.Test;
 
 public class ReleaseCase  extends seleniumdriver {
-    @BeforeSuite
-    public static  void open(){
-        seleniumdriver.open("chrome");
-        driver.get("http://192.168.100.17/#/Login");
-    }
+
 @Test
     public void cases(){
     //登录账号

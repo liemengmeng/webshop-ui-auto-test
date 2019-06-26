@@ -27,6 +27,6 @@ log.error("浏览器输入有误");
 
     //关闭所有相关资源
     public static void closeAll(){
-        driver.close();
+        driver.quit();
     }
 }

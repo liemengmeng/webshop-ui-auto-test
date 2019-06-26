@@ -30,7 +30,7 @@
         </classes>
     </test>
 
-    
+
     <test verbose="2" preserve-order="true" name="发布案例">
     <classes>
     <class name="TestCase.openURL">
@@ -41,7 +41,7 @@
     </class>
     <class name="TestCase.ReleaseCase">
         <methods>
-            <include name="login1"/>
+            <include name="cases"/>
 
         </methods>
     </class>

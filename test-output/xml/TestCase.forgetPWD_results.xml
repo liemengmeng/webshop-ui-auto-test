@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="D:/KDubaSoftDownloads/JavaWork/webshop-ui-auto-test"
+<testsuite name="登录注册"
            tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="131.205">
+           time="134.284">
   <properties />
   
   
-            <testcase name="passwordFalse" time="65.381" classname="TestCase.forgetPWD" />
-                <testcase name="passwordTrue" time="65.824" classname="TestCase.forgetPWD" />
+            <testcase name="passwordFalse" time="65.394" classname="TestCase.forgetPWD" />
+                <testcase name="passwordTrue" time="68.890" classname="TestCase.forgetPWD" />
       
 </testsuite>
