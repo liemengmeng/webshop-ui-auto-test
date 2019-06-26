@@ -12,19 +12,7 @@ import java.awt.event.KeyEvent;
 import java.util.Set;
 
 public class releaseCase_logic1 extends seleniumdriver {
-   static WebDriver driver=seleniumdriver.driver;
-    public  static void login() {
-        //打开网页
-        seleniumdriver.open("chrome");
-//登录账号
-        login_logic.userlogin("13592280532", "lmm123456");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
+    static WebDriver driver=seleniumdriver.driver;
 
     //该方法只适用于除照明工程之外的案例
     public static void case1(){
@@ -95,19 +83,19 @@ public class releaseCase_logic1 extends seleniumdriver {
         try {
             Robot robot = new Robot();
             robot.setAutoDelay(2000);
-            robot.mouseMove(131, 348);
+            robot.mouseMove(62, 219);
             robot.setAutoDelay(2000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
             robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
-            robot.mouseMove(531, 309);
+            robot.mouseMove(589, 170);
             robot.setAutoDelay(1000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
             robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(1000);
-            robot.mouseMove(567, 467);
+            robot.mouseMove(506, 339);
             robot.setAutoDelay(1000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(1000);

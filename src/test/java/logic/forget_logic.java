@@ -1,5 +1,6 @@
 package logic;
 import MyAssert.MyAssert;
+import com.fengzhaung.actions;
 import com.fengzhaung.seleniumdriver;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -25,8 +26,7 @@ public static void luru(String user,String yanzheng){
         Thread.sleep(61000);
     }catch (java.lang.Exception e ){
     }
-
-    driver.findElement(forgetPwd.butCode).click();
+    actions.clik(forgetPwd.butCode);
     try {
         Thread.sleep(3000);
     }catch (java.lang.Exception e ){

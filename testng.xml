@@ -6,7 +6,7 @@
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
 
-    <test verbose="2" preserve-order="true" name="D:/KDubaSoftDownloads/JavaWork/webshop-ui-auto-test">
+    <test verbose="2" preserve-order="true" name="登录注册">
         <classes>
             <class name="TestCase.openURL">
                 <methods>
@@ -23,9 +23,29 @@
             </class>
             <class name="TestCase.forgetPWD">
                 <methods>
-                    <include name="skipForget"/>
+                    <include name="passwordFalse"/>
+                    <include name="passwordTrue"/>
                 </methods>
             </class>
         </classes>
     </test>
+
+    
+    <test verbose="2" preserve-order="true" name="发布案例">
+    <classes>
+    <class name="TestCase.openURL">
+        <methods>
+            <include name="open"/>
+            <include name="closeAll"/>
+        </methods>
+    </class>
+    <class name="TestCase.ReleaseCase">
+        <methods>
+            <include name="login1"/>
+
+        </methods>
+    </class>
+    </classes>
+    </test>
+
 </suite>
