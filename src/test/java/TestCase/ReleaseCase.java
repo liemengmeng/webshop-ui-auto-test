@@ -3,10 +3,11 @@ package TestCase;
 import com.fengzhaung.seleniumdriver;
 import logic.releaseCase_logic1;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class ReleaseCase  extends seleniumdriver {
-
+static WebDriver driver=seleniumdriver.driver;
 @Test
     public void cases(){
     //登录账号

@@ -17,3 +17,6 @@
 2019-06-26 13:41:36,065 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div[2]/div[1]/span[2]
 2019-06-26 13:55:49,221 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[1]/div/div[3]/div/form/div[2]/div/button/span
 2019-06-26 14:04:48,057 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[1]/div/div[3]/div/form/div[2]/div/button/span
+2019-06-28 09:16:37,074 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div[2]/div[1]/span[2]
+2019-06-28 09:23:01,668 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.linkText: 退出
+2019-06-28 11:54:26,062 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: /html/body/div[3]/div[1]/div[1]/ul/li[6]
