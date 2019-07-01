@@ -2,20 +2,18 @@ package logic;
 
 
 import com.fengzhaung.seleniumdriver;
-import org.openqa.selenium.By;
-import org.testng.annotations.Test;
 import pages.product;
 
 
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.Set;
 
 
 public class Product_logic extends seleniumdriver {
-@Test
+
     public static void release1() {
-        seleniumdriver.open("chrome");
-        driver.get("http://192.168.100.17/#/Login");
-        login_logic.userlogin("13592280532", "lmm123456");
         //点击产品管理
         com.fengzhaung.actions.clik(product.productLink);
         //点击发布产品
@@ -43,9 +41,74 @@ public class Product_logic extends seleniumdriver {
                 com.fengzhaung.actions.clik(product.leimu);
                 com.fengzhaung.actions.clik(product.getleimu);
                 com.fengzhaung.actions.clik(product.confirm);
+                driver.findElement(product.mingcheng).sendKeys("产品名称");
+                driver.findElement(product.ci).sendKeys("照明");
+                driver.findElement(product.guangtongliang).sendKeys("200");
+                driver.findElement(product.guangxiao).sendKeys("50");
+                driver.findElement(product.xianse).sendKeys("100");
+                driver.findElement(product.shouming).sendKeys("3年");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                com.fengzhaung.actions.clik(product.tiaoguang1);
+                com.fengzhaung.actions.clik(product.tiaoguang2);
+                com.fengzhaung.actions.clik(product.fanghu1);
+                com.fengzhaung.actions.clik(product.fanghu2);
+                driver.findElement(product.chicun).sendKeys("20");
+                com.fengzhaung.actions.clik(product.renzheng);
+                com.fengzhaung.actions.clik(product.cailiao1);
+                com.fengzhaung.actions.clik(product.cailiao2);
+                driver.findElement(product.dianya).sendKeys("500");
+                driver.findElement(product.sewen).sendKeys("300");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                com.fengzhaung.actions.clik(product.danwei1);
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                com.fengzhaung.actions.clik(product.danwei2);
+                driver.findElement(product.dingliang).sendKeys("20");
+                driver.findElement(product.jiage).sendKeys("50");
+                //上传图片
+                driver.findElement(product.liulan).click();
+                try {
+                    Robot robot = new Robot();
+                    robot.setAutoDelay(2000);
+                    robot.mouseMove(62, 219);
+                    robot.setAutoDelay(2000);
+                    robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
+                    robot.setAutoDelay(2000);
+                    robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
+                    robot.setAutoDelay(2000);
+                    robot.mouseMove(589, 170);
+                    robot.setAutoDelay(1000);
+                    robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
+                    robot.setAutoDelay(2000);
+                    robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
+                    robot.setAutoDelay(1000);
+                    robot.mouseMove(506, 339);
+                    robot.setAutoDelay(1000);
+                    robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
+                    robot.setAutoDelay(1000);
+                    robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
+                    robot.setAutoDelay(1000);
 
+                }catch (AWTException e){
+
+                }
+com.fengzhaung.actions.clik(product.tijiao);
             }
         }
     }
+
+
+
 
 }

@@ -5,47 +5,27 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
-
-    <test verbose="2" preserve-order="true" name="登录注册">
+    <test verbose="2" preserve-order="true" name="发布产品">
         <classes>
-            <class name="TestCase.openURL">
-                <methods>
-                    <include name="open"/>
-                    <include name="closeAll"/>
-                </methods>
-            </class>
-            <class name="TestCase.Login">
-                <methods>
-                    <include name="login1"/>
-                    <include name="login2"/>
-                    <include name="login3"/>
-                </methods>
-            </class>
-            <class name="TestCase.forgetPWD">
-                <methods>
-                    <include name="passwordFalse"/>
-                    <include name="passwordTrue"/>
-                </methods>
+            <class name="TestCase.openURL"/>
+            <class name="TestCase.product">
             </class>
         </classes>
     </test>
-
-
-    <test verbose="2" preserve-order="true" name="发布案例">
+    <test verbose="2" preserve-order="true" name="登录忘记密码">
     <classes>
-    <class name="TestCase.openURL">
-        <methods>
-            <include name="open"/>
-            <include name="closeAll"/>
-        </methods>
-    </class>
-    <class name="TestCase.ReleaseCase">
-        <methods>
-            <include name="cases"/>
-
-        </methods>
-    </class>
+        <class name="TestCase.openURL"/>
+        <class name="TestCase.Login"/>
+        <class name="TestCase.forgetPWD">
+        </class>
     </classes>
+</test>
+    <test verbose="2" preserve-order="true" name="发布案例">
+        <classes>
+            <class name="TestCase.openURL"/>
+            <class name="TestCase.ReleaseCase">
+            </class>
+        </classes>
     </test>
 
 </suite>

@@ -105,7 +105,7 @@ public class releaseCase_logic1 extends seleniumdriver {
         }catch (AWTException e){
 
         }
-       driver.findElement(releaseCasse.mingcheng).sendKeys("产品名称");
+       driver.findElement(releaseCasse.mingcheng).sendKeys("案例名称");
         driver.findElement(releaseCasse.gonglv).sendKeys("30");
        driver.findElement(releaseCasse.shuliang).sendKeys("50");
         try{

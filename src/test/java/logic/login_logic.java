@@ -28,6 +28,10 @@ public class login_logic extends seleniumdriver {
     public static void tellogin(String tel,String yanzheng){
 
     //点击切换手机号的登录按钮
+        try {
+            Thread.sleep(2000);
+        }catch (Exception e ){
+        }
   com.fengzhaung.actions.clik(login.tellogin);
    driver.findElement(login.tel).sendKeys(tel);
         try {
