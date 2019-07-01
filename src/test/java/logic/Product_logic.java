@@ -81,7 +81,7 @@ public class Product_logic extends seleniumdriver {
                 try {
                     Robot robot = new Robot();
                     robot.setAutoDelay(2000);
-                    robot.mouseMove(62, 219);
+                    robot.mouseMove(81, 220);
                     robot.setAutoDelay(2000);
                     robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
                     robot.setAutoDelay(2000);
@@ -104,6 +104,10 @@ public class Product_logic extends seleniumdriver {
 
                 }
 com.fengzhaung.actions.clik(product.tijiao);
+                //关闭当前页面
+                seleniumdriver.close();
+                //切换句柄
+                driver.switchTo().window(handles1);
             }
         }
     }

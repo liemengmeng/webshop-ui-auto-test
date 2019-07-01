@@ -24,7 +24,7 @@ public class releaseCase_logic1 extends seleniumdriver {
        driver.findElement(releaseCasse.release).click();
 
         //获取当前页面的句柄
-        String handles1=driver.getWindowHandle();
+ String handles1=driver.getWindowHandle();
 //获得所有页面的句柄
         Set<String> handles=driver.getWindowHandles();
         for (String handle:handles) {
@@ -83,7 +83,7 @@ public class releaseCase_logic1 extends seleniumdriver {
         try {
             Robot robot = new Robot();
             robot.setAutoDelay(2000);
-            robot.mouseMove(62, 219);
+            robot.mouseMove(76, 186);
             robot.setAutoDelay(2000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
@@ -119,7 +119,26 @@ public class releaseCase_logic1 extends seleniumdriver {
 
     public static void case3(){
     driver.findElement(releaseCasse.fanhui).click();
+    //获取当前页面的句柄
+        String handles1=driver.getWindowHandle();
+        //关闭当前页面
+        seleniumdriver.close();
+//获得所有页面的句柄
+        Set<String> handles=driver.getWindowHandles();
+        for (String handle:handles) {
+            if (handle.equals(handles1)) {
+                continue;
+
+            }else{
+                driver.switchTo().window(handle);
+
+            }
+
+        }
+
+    }
+
     }
 
 
-}
+
