@@ -3,11 +3,14 @@ package TestCase;
 import com.fengzhaung.seleniumdriver;
 
 import logic.Product_logic;
+
 import org.testng.annotations.Test;
 
 
 public class product extends seleniumdriver {
-@Test
+
+
+  @Test
   public static void product1(){
   //登录账号
   logic.login_logic.userlogin("13592280532","lmm123456");

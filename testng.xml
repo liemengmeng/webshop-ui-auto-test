@@ -5,10 +5,18 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
+
     <test verbose="2" preserve-order="true" name="发布产品">
         <classes>
             <class name="TestCase.openURL"/>
             <class name="TestCase.product">
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="发布案例">
+        <classes>
+            <class name="TestCase.openURL"/>
+            <class name="TestCase.ReleaseCase">
             </class>
         </classes>
     </test>
@@ -20,12 +28,6 @@
         </class>
     </classes>
 </test>
-    <test verbose="2" preserve-order="true" name="发布案例">
-        <classes>
-            <class name="TestCase.openURL"/>
-            <class name="TestCase.ReleaseCase">
-            </class>
-        </classes>
-    </test>
+
 
 </suite>

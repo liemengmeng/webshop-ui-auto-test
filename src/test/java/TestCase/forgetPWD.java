@@ -29,6 +29,7 @@ public class forgetPWD extends seleniumdriver {
     logic.forget_logic.resetpwd("lmm123456","lmm123456");
     //重置成功查看页面是否跳转
     logic.forget_logic.succeed();
+    //点击账号密码登录
 }
 
 
@@ -48,7 +49,7 @@ String text=driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[3]/div/
 MyAssert.assertEquals(text,"密码格式不对");
 //点击登录返回登录页
     driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div[2]/button")).click();
-    //关闭所有页面
+
 
 }
 
