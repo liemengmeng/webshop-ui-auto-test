@@ -1,10 +1,13 @@
 package logic;
 
 
+import MyAssert.MyAssert;
 import com.fengzhaung.seleniumdriver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 import pages.releaseCasse;
 
 import java.awt.*;
@@ -12,7 +15,7 @@ import java.awt.event.KeyEvent;
 import java.util.Set;
 
 public class releaseCase_logic1 extends seleniumdriver {
-    static WebDriver driver=seleniumdriver.driver;
+
 
     //该方法只适用于除照明工程之外的案例
     public static void case1(){
@@ -137,7 +140,25 @@ public class releaseCase_logic1 extends seleniumdriver {
         }
 
     }
+    //管理案例
 
+public static void  cases1(){
+com.fengzhaung.actions.clik(releaseCasse.ceselink);
+com.fengzhaung.actions.clik(releaseCasse. guanli);
+    com.fengzhaung.actions.clik(releaseCasse.shenhezhong);
+    driver.findElement(releaseCasse.xiangmu).sendKeys("案例名称");
+    com.fengzhaung.actions.clik(releaseCasse.sousuo);
+    boolean b=driver.findElement(By.xpath("//*[@id=\"app\"]/div[3]/div[3]/div[2]/div/div[3]/table/tbody/tr[1]/td[2]/div/div/div[2]/p[1]")).isDisplayed();
+    MyAssert.assertTrue(b);
+    com.fengzhaung.actions.clik(releaseCasse.qingkong);
+    }
+    //案例回收站
+    public static void  cases2(){
+        com.fengzhaung.actions.clik(releaseCasse.ceselink);
+        com.fengzhaung.actions.clik(releaseCasse.huishou);
+        boolean b=driver.findElement(By.xpath("//*[@id=\"app\"]/div[3]/div[3]/span[2]")).isDisplayed();
+        MyAssert.assertTrue(b);
+    }
     }
 
 

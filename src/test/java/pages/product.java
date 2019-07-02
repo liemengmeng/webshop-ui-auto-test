@@ -73,4 +73,25 @@ public class product {
      public static By tijiao=By.xpath("//*[@id=\"struct-buttons\"]/button[3]");
 
 
+     //管理产品菜单
+    public static By Linkchanpin=By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div/div/div[2]/span");
+    //产品列表（产品名称搜索）
+    public  static By Getmingcheng =By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[5]/div/div/input");
+    //草稿列表
+    public static By caogao=By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[1]/div[10]/span");
+    //全部列表
+    public static By quanbu=By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[1]/div[2]/span");
+    //清空按钮
+    public static By qingkong =By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[6]/div/button[2]/span");
+    //搜索按钮
+    public static By sousuo=By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[6]/div/button[1]");
+
+
+    //产品回收站
+    public static By recycleLink=By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div/div/div[3]/span");
+
+
+
+
+
 }

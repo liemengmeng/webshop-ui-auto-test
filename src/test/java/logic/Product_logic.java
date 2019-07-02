@@ -1,9 +1,16 @@
 package logic;
 
 
+import MyAssert.MyAssert;
+import TestCase.Login;
 import com.fengzhaung.seleniumdriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import pages.product;
-
+import tools.MyFile;
 
 
 import java.awt.*;
@@ -12,7 +19,7 @@ import java.util.Set;
 
 
 public class Product_logic extends seleniumdriver {
-
+//发布产品
     public static void release1() {
         //点击产品管理
         com.fengzhaung.actions.clik(product.productLink);
@@ -112,7 +119,29 @@ com.fengzhaung.actions.clik(product.tijiao);
         }
     }
 
+//管理产品
+    public static void QMAN(){
+        com.fengzhaung.actions.clik( product.productLink);
+        com.fengzhaung.actions.clik(product.Linkchanpin);
+        driver.findElement(product.Getmingcheng).sendKeys("产品名称");
+        com.fengzhaung.actions.clik(product.caogao);
+        com.fengzhaung.actions.clik(product.quanbu);
+    com.fengzhaung.actions.clik(product.sousuo);
+  Boolean b=  driver.findElement(By.xpath("//*[@id=\"app\"]/div[3]/div[3]/div[2]/div/div[3]/table/tbody/tr[1]/td[2]/div/div/div[2]/p[1]")).isDisplayed();
+  //判断该元素是否存在
+   MyAssert.assertTrue(b);
+   com.fengzhaung.actions.clik(product.qingkong);
+    driver.findElement(product.Getmingcheng).sendKeys("产品名称");
+    com.fengzhaung.actions.clik(product.caogao);
+    }
 
+//产品回收站
 
+    public static void recycle(){
+        com.fengzhaung.actions.clik( product.productLink);
+        com.fengzhaung.actions.clik(product.recycleLink);
+        Boolean a=driver.findElement(By.xpath("//*[@id=\"app\"]/div[3]/div[3]/span")).isDisplayed();
+        MyAssert.assertTrue(a);
+    }
 
 }

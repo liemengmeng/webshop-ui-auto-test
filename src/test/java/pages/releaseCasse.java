@@ -52,4 +52,20 @@ public class releaseCasse {
     public  static By jixu=By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div[2]/button[2]/span");
     public static By fanhui=By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div[2]/button[1]/span");
 
+    //管理案例
+public static By guanli=By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div/div/div[2]/span");
+//案例列表（审核中）
+    public static By shenhezhong =By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[1]/div[8]/span");
+    //案例列表（全部）
+    public static By quanbu=By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[1]/div[2]/span");
+    //项目名称
+    public static  By xiangmu=By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[5]/div[1]/div/input");
+    //清空按钮
+    public static By qingkong=By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[6]/div/button[2]/span");
+    //搜索按钮
+    public static By sousuo=By.xpath("//*[@id=\"app\"]/div[3]/div[2]/div/div[6]/div/button[1]/span");
+
+
+    //案例回收站
+    public static By huishou=By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div/div/div[3]/span");
 }

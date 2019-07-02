@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="发布产品"
-           tests="1"
+<testsuite name="管理产品"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="38.841">
+           time="52.412">
   <properties />
   
   
-            <testcase name="product1" time="38.841" classname="TestCase.product" />
+            <testcase name="product3" time="3.731" classname="TestCase.product" />
+                <testcase name="product2" time="7.111" classname="TestCase.product" />
+                <testcase name="product1" time="41.570" classname="TestCase.product" />
       
 </testsuite>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="发布案例"
-           tests="1"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="40.036">
+           time="52.184">
   <properties />
   
   
-            <testcase name="cases" time="40.036" classname="TestCase.ReleaseCase" />
+            <testcase name="cases2" time="9.936" classname="TestCase.ReleaseCase" />
+                <testcase name="cases1" time="42.248" classname="TestCase.ReleaseCase" />
       
 </testsuite>
