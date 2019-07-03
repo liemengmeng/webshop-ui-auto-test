@@ -3,7 +3,6 @@ package logic;
 import MyAssert.MyAssert;
 import com.fengzhaung.seleniumdriver;
 import org.openqa.selenium.By;
-import org.testng.annotations.Test;
 import pages.client;
 
 public class client_logic  extends seleniumdriver {
@@ -36,7 +35,7 @@ com.fengzhaung.actions.clik(client.clients);
         com.fengzhaung.actions.clik(client.xiangqing);
         com.fengzhaung.actions.clik(client.fanhui2);
     }
-    @Test
+
     public static void  shangji(){
         try {
             Thread.sleep(2000);
