@@ -10,7 +10,7 @@ public class openURL  extends  seleniumdriver{
     @BeforeSuite
     public static  void open(){
 seleniumdriver.open("chrome");
-driver.get("http://192.168.100.17/#/Login");
+        driver.get("http://192.168.100.17/#/Login");
     }
 
     @AfterSuite

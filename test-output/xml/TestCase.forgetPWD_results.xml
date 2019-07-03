@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="134.714">
+           time="134.261">
   <properties />
   
   
-            <testcase name="passwordTrue" time="69.081" classname="TestCase.forgetPWD" />
-                <testcase name="passwordFalse" time="65.633" classname="TestCase.forgetPWD" />
+            <testcase name="passwordFalse" time="65.450" classname="TestCase.forgetPWD" />
+                <testcase name="passwordTrue" time="68.811" classname="TestCase.forgetPWD" />
       
 </testsuite>

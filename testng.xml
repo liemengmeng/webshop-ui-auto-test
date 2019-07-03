@@ -20,6 +20,13 @@
             </class>
         </classes>
     </test>
+    <test verbose="2" preserve-order="true" name="商机/客户">
+        <classes>
+            <class name="TestCase.openURL"/>
+            <class name="TestCase.Client">
+        </class>
+        </classes>
+    </test>
     <test verbose="2" preserve-order="true" name="登录忘记密码">
     <classes>
         <class name="TestCase.openURL"/>
