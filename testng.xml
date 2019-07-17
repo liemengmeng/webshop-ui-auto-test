@@ -5,14 +5,6 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
-
-    <test verbose="2" preserve-order="true" name="管理产品">
-        <classes>
-            <class name="TestCase.openURL"/>
-            <class name="TestCase.product">
-            </class>
-        </classes>
-    </test>
     <test verbose="2" preserve-order="true" name="发布案例">
         <classes>
             <class name="TestCase.openURL"/>
@@ -20,21 +12,10 @@
             </class>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="商机/客户">
-        <classes>
-            <class name="TestCase.openURL"/>
-            <class name="TestCase.Client">
-        </class>
-        </classes>
-    </test>
-    <test verbose="2" preserve-order="true" name="登录忘记密码">
-    <classes>
-        <class name="TestCase.openURL"/>
-        <class name="TestCase.Login"/>
-        <class name="TestCase.forgetPWD">
-        </class>
-    </classes>
-</test>
+
+
+
+
 
 
 </suite>

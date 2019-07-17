@@ -5,9 +5,7 @@ import MyAssert.MyAssert;
 import com.fengzhaung.seleniumdriver;
 import org.openqa.selenium.By;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.Test;
+
 import pages.releaseCasse;
 
 import java.awt.*;
@@ -21,12 +19,9 @@ public class releaseCase_logic1 extends seleniumdriver {
     public static void case1(){
 
         //点击案例管理
-        Actions actions =new Actions(driver);
-        WebElement wd= driver.findElement(releaseCasse.ceselink);
-        actions.moveToElement(wd).perform();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[3]/div/div/a")).click();
 //点击发布案例
-       driver.findElement(releaseCasse.release).click();
-
+        com.fengzhaung.actions.clik(releaseCasse.release);
         //获取当前页面的句柄
  String handles1=driver.getWindowHandle();
 //获得所有页面的句柄
@@ -87,19 +82,19 @@ public class releaseCase_logic1 extends seleniumdriver {
         try {
             Robot robot = new Robot();
             robot.setAutoDelay(2000);
-            robot.mouseMove(76, 186);
+            robot.mouseMove(73, 236);
             robot.setAutoDelay(2000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
             robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
-            robot.mouseMove(589, 170);
+            robot.mouseMove(597, 206);
             robot.setAutoDelay(1000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
             robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(1000);
-            robot.mouseMove(506, 339);
+            robot.mouseMove(505, 333);
             robot.setAutoDelay(1000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(1000);
@@ -118,11 +113,11 @@ public class releaseCase_logic1 extends seleniumdriver {
 
         }
         //点击提交按钮
-      driver.findElement(releaseCasse.tijiao).click();
+        com.fengzhaung.actions.clik(releaseCasse.tijiao);
     }
 
     public static void case3(){
-    driver.findElement(releaseCasse.fanhui).click();
+   // driver.findElement(releaseCasse.fanhui).click();
     //获取当前页面的句柄
         String handles1=driver.getWindowHandle();
         //关闭当前页面
@@ -144,8 +139,14 @@ public class releaseCase_logic1 extends seleniumdriver {
     //管理案例
 
 public static void  cases1(){
-com.fengzhaung.actions.clik(releaseCasse.ceselink);
-com.fengzhaung.actions.clik(releaseCasse. guanli);
+    try {
+        Thread.sleep(2000);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[3]/div/div/a")).click();
+    //点击管理案例
+driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div/div/div[2]/span")).click();
     com.fengzhaung.actions.clik(releaseCasse.shenhezhong);
     driver.findElement(releaseCasse.xiangmu).sendKeys("案例名称");
     com.fengzhaung.actions.clik(releaseCasse.sousuo);
@@ -155,7 +156,7 @@ com.fengzhaung.actions.clik(releaseCasse. guanli);
     }
     //案例回收站
     public static void  cases2(){
-        com.fengzhaung.actions.clik(releaseCasse.ceselink);
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[3]/div/div/a")).click();
         com.fengzhaung.actions.clik(releaseCasse.huishou);
         boolean b=driver.findElement(By.xpath("//*[@id=\"app\"]/div[3]/div[3]/span[2]")).isDisplayed();
         MyAssert.assertTrue(b);
