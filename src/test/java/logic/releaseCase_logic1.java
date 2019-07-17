@@ -19,20 +19,11 @@ public class releaseCase_logic1 extends seleniumdriver {
 
     //该方法只适用于除照明工程之外的案例
     public static void case1(){
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         //点击案例管理
-
-       driver.findElement(releaseCasse.ceselink).click();
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
+        Actions actions =new Actions(driver);
+        WebElement wd= driver.findElement(releaseCasse.ceselink);
+        actions.moveToElement(wd).perform();
 //点击发布案例
        driver.findElement(releaseCasse.release).click();
 

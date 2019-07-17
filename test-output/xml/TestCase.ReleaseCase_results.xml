@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="53.160">
+           time="49.629">
   <properties />
   
   
-            <testcase name="cases1" time="42.854" classname="TestCase.ReleaseCase" />
-                <testcase name="cases3" time="4.333" classname="TestCase.ReleaseCase" />
-                <testcase name="cases2" time="5.973" classname="TestCase.ReleaseCase" />
+            <testcase name="cases3" time="4.192" classname="TestCase.ReleaseCase" />
+                <testcase name="cases1" time="40.119" classname="TestCase.ReleaseCase" />
+                <testcase name="cases2" time="5.318" classname="TestCase.ReleaseCase" />
       
 </testsuite>

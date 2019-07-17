@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class releaseCasse {
     //案例管理
-    public static By ceselink=  By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[3]/div/div/a");
+    public static By ceselink=  By.linkText("案例管理");
     //发布案例
     public static By release=By.xpath("//*[@id=\"app\"]/div[2]/div[2]/div/div/div[1]/span");
     //发布案例第一步
