@@ -73,3 +73,10 @@
 2019-07-17 18:36:19,212 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div[2]/div[1]/span[2]
 2019-07-17 18:45:26,470 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.linkText: 案例管理
 2019-07-17 18:46:32,305 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.linkText: 案例管理
+2019-07-17 19:55:11,394 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div/div/div[2]/div/div/a
+2019-07-17 19:55:30,044 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div[2]/div[1]/span[2]
+2019-07-17 19:57:52,264 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div/div/div[2]/div/div/a
+2019-07-17 19:58:10,842 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div[2]/div[1]/span[2]
+2019-07-17 20:00:14,032 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div/div/div[2]/div/div/a
+2019-07-17 20:02:32,158 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div/div/div[2]/div/div/a
+2019-07-17 20:02:47,627 INFO main [class com.fengzhaung.seleniumdriver]info(line:45)查找元素超时By.xpath: //*[@id="app"]/div[2]/div[2]/div[1]/span[2]
