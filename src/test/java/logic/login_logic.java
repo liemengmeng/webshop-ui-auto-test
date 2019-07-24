@@ -44,7 +44,7 @@ public class login_logic extends seleniumdriver {
     }catch (Exception e ){
     }
     driver.findElement(login.yanzheng).sendKeys(yanzheng);
- actions.clik(login.longinbut);
+        com.fengzhaung.actions.clik(login.longinbut);
 }
 
 //登录成功退出登录

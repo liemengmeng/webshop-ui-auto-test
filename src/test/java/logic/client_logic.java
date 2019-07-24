@@ -44,8 +44,7 @@ com.fengzhaung.actions.clik(client.clients);
         }
         com.fengzhaung.actions.clik(client.clients);
         com.fengzhaung.actions.clik(client.shangji);
-       Boolean b=driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div[2]/div/div[1]/span")).isDisplayed();
-       MyAssert.assertTrue(b);
+
        //浏览器后退
        driver.navigate().back();
         try {

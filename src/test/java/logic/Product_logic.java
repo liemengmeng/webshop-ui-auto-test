@@ -22,7 +22,7 @@ public class Product_logic extends seleniumdriver {
 //发布产品
     public static void release1() {
         //点击产品管理
-        com.fengzhaung.actions.clik(product.productLink);
+        com.fengzhaung.actions.clik(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[2]/div/div/a"));
         //点击发布产品
         com.fengzhaung.actions.clik(product.releaseProduct);
         //获取当前页面句柄

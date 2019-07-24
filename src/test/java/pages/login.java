@@ -20,7 +20,7 @@ public class login {
     //忘记密码页面跳转
     public static By pwdlink=By.linkText("忘记登录密码？");
     //登录成功退出登录按钮
-    public static By out1=By.xpath("//*[@id=\"app\"]/div[1]/div[2]/img");
+    public static By out1=By.xpath("//*[@id=\"app\"]/div[1]/div[2]");
     public static  By out2=By.linkText("退出");
 
 }
