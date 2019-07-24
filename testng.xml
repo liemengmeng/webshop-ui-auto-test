@@ -13,12 +13,6 @@
         </classes>
     </test>
 
-    <test verbose="2" preserve-order="true" name="商机/客户">
-        <classes>
-            <class name="TestCase.Client">
-            </class>
-        </classes>
-    </test>
     <test verbose="2" preserve-order="true" name="管理产品">
         <classes>
             <class name="TestCase.product">
@@ -32,9 +26,15 @@
             <class name="TestCase.forgetPWD">
             </class>
         </classes>
+
     </test>
 
 
-
+    <test verbose="2" preserve-order="true" name="商机/客户">
+        <classes>
+            <class name="TestCase.Client">
+            </class>
+        </classes>
+    </test>
 
 </suite>
