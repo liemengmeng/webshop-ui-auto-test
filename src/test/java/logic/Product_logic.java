@@ -100,7 +100,7 @@ public class Product_logic extends seleniumdriver {
                     robot.setAutoDelay(2000);
                     robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
                     robot.setAutoDelay(1000);
-                    robot.mouseMove(506, 339);
+                    robot.mouseMove(500, 312);
                     robot.setAutoDelay(1000);
                     robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
                     robot.setAutoDelay(1000);

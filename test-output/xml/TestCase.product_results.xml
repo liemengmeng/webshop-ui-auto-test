@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="49.167">
+           time="51.497">
   <properties />
   
   
-            <testcase name="product1" time="38.723" classname="TestCase.product" />
-                <testcase name="product3" time="3.787" classname="TestCase.product" />
-                <testcase name="product2" time="6.657" classname="TestCase.product" />
+            <testcase name="product1" time="39.079" classname="TestCase.product" />
+                <testcase name="product3" time="3.868" classname="TestCase.product" />
+                <testcase name="product2" time="8.550" classname="TestCase.product" />
       
 </testsuite>

@@ -41,9 +41,13 @@ public class releaseCasse   {
     public static By liulan=By.xpath("//*[@id=\"struct-scImages\"]/div/div[2]/div[1]/div/div/div/div[2]/input");
 
     //选用灯具产品信息
-    public static By mingcheng=By.xpath("//*[@id=\"struct-ladderPrice\"]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div[3]/table/tbody/tr/td[1]/div/span[1]/input");
-    public static By gonglv=By.xpath("//*[@id=\"struct-ladderPrice\"]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div[3]/table/tbody/tr/td[2]/div/span[1]/input");
-    public static By shuliang=By.xpath("//*[@id=\"struct-ladderPrice\"]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div[3]/table/tbody/tr/td[3]/div/span[1]/input");
+    public static By leimu1 =By.xpath("//*[@id=\"struct-ladderPrice\"]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div[3]/table/tbody/tr/td[1]/div/span[1]/div/div/input");
+    public static By leimu2=By.xpath("/html/body/div[6]/div[1]/div[1]/ul/li[1]");
+
+    public static By mingcheng2=By.xpath("//*[@id=\"struct-ladderPrice\"]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div[3]/table/tbody/tr/td[2]/div/span[1]/input");
+    public static By shuliang2=By.xpath("//*[@id=\"struct-ladderPrice\"]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div[3]/table/tbody/tr/td[3]/div/span[1]/input");
+    public static By guige=By.xpath("//*[@id=\"struct-ladderPrice\"]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div[3]/table/tbody/tr/td[4]/div/span[1]/input");
+
 
 
     //提交按钮

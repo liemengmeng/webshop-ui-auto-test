@@ -82,19 +82,19 @@ public class releaseCase_logic1 extends seleniumdriver {
         try {
             Robot robot = new Robot();
             robot.setAutoDelay(2000);
-            robot.mouseMove(73, 236);
+            robot.mouseMove(74, 162);
             robot.setAutoDelay(2000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
             robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
-            robot.mouseMove(597, 206);
+            robot.mouseMove(600, 164);
             robot.setAutoDelay(1000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(2000);
             robot.mouseRelease(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(1000);
-            robot.mouseMove(505, 333);
+            robot.mouseMove(510, 313);
             robot.setAutoDelay(1000);
             robot.mousePress(KeyEvent.BUTTON1_DOWN_MASK);
             robot.setAutoDelay(1000);
@@ -104,9 +104,11 @@ public class releaseCase_logic1 extends seleniumdriver {
         }catch (AWTException e){
 
         }
-       driver.findElement(releaseCasse.mingcheng).sendKeys("案例名称");
-        driver.findElement(releaseCasse.gonglv).sendKeys("30");
-       driver.findElement(releaseCasse.shuliang).sendKeys("50");
+        driver.findElement(releaseCasse.leimu1).click();
+        driver.findElement(releaseCasse.leimu2).click();
+       driver.findElement(releaseCasse.mingcheng2).sendKeys("案例名称");
+       driver.findElement(releaseCasse.shuliang2).sendKeys("50");
+       driver.findElement(releaseCasse.guige).sendKeys("30");
         try{
             Thread.sleep(3000);
         }catch (Exception e){
