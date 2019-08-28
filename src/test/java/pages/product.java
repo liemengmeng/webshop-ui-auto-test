@@ -68,7 +68,7 @@ public class product {
     //价格
     public static By jiage=By.xpath("//*[@id=\"struct-ladderPrice\"]/div/div[2]/div[1]/div/div/div[1]/div/div[1]/div/div[3]/table/tbody/tr/td[2]/div/span[2]/input");
     //浏览图片
-    public static By liulan =By.xpath("//*[@id=\"struct-scImages\"]/div/div[2]/div[1]/div/div/div/div[1]/input");
+    public static By liulan =By.xpath("//*[@id=\"struct-scImages\"]/div/div[2]/div[1]/div/div/div/div[2]/input");
     //提交按钮
      public static By tijiao=By.xpath("//*[@id=\"struct-buttons\"]/button[3]");
 

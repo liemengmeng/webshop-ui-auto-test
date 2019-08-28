@@ -38,7 +38,7 @@ public class releaseCasse   {
 
 
     //案例图片浏览按钮
-    public static By liulan=By.xpath("//*[@id=\"struct-scImages\"]/div/div[2]/div[1]/div/div/div/div[1]/input");
+    public static By liulan=By.xpath("//*[@id=\"struct-scImages\"]/div/div[2]/div[1]/div/div/div/div[2]/input");
 
     //选用灯具产品信息
     public static By mingcheng=By.xpath("//*[@id=\"struct-ladderPrice\"]/div/div[2]/div[1]/div/div/div/div/div[1]/div/div[3]/table/tbody/tr/td[1]/div/span[1]/input");
